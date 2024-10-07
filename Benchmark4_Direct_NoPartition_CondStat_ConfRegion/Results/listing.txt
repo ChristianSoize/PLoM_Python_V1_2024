@@ -1,0 +1,1447 @@
+      
+  ---------------- WorkFlow1_SolverDirect_WithoutPartition ---------------- 
+      
+   Step1_Pre_processing                    = 1 
+   Step2_Processing                        = 1 
+   Step3_Post_processing                   = 1 
+   Step4_Conditional_statistics_processing = 1 
+      
+  ================================ Step1 Pre_processing ================================ 
+       
+       
+  ------ Task1_DataStructureCheck 
+       
+       
+ ind_exec_solver = 1, Direct Solver used 
+       
+ n_q     =       400 
+ n_w     =         2 
+ n_x     =       402 
+       
+ nqreal  =       400 
+ nwreal  =         0 
+ nbreal  =       400 
+       
+ nqpos   =         0 
+ nwpos   =         2 
+ nbpos   =         2 
+       
+ nq_obs  =       200 
+ nw_obs  =         2 
+ nx_obs  =       202 
+       
+       
+  ----- Elapsed time for Task1_DataStructureCheck 
+       
+  Elapsed Time   =        0.00
+      
+       
+  ------ Task2_Scaling  
+       
+       
+       
+ n_x         =       402 
+ nbreal      =       400 
+ nbpos       =         2 
+       
+ ind_scaling = 1 
+       
+       
+       
+  ----- Elapsed time for Task2_Scaling 
+       
+  Elapsed Time   =        0.00
+      
+       
+  ------ Task3_PCA   
+       
+       
+       
+ RmuPCA =          
+  8.27e+00  5.47e+00  7.68e-01  6.36e-01  5.59e-01  3.82e-01  3.64e-01  2.10e-01  1.79e-01  1.71e-01  1.35e-01  1.17e-01  9.61e-02  7.99e-02  7.40e-02  6.86e-02  5.61e-02  5.40e-02  4.81e-02  4.55e-02  4.37e-02  3.51e-02  3.40e-02  2.84e-02  2.59e-02  2.47e-02  2.17e-02  2.14e-02  1.89e-02  1.57e-02  1.44e-02  1.34e-02  1.16e-02  1.09e-02  9.77e-03  9.68e-03  8.35e-03  8.13e-03  7.84e-03  6.56e-03  6.14e-03  5.48e-03  5.17e-03  5.06e-03  4.08e-03  3.83e-03  3.73e-03  3.55e-03  3.03e-03  3.00e-03  2.83e-03  2.82e-03  2.52e-03  2.44e-03  2.38e-03  2.03e-03  1.84e-03  1.81e-03  1.68e-03  1.62e-03  1.46e-03  1.42e-03  1.31e-03  1.28e-03  1.17e-03  1.16e-03  1.09e-03  9.54e-04  9.19e-04  8.64e-04  8.63e-04  8.01e-04  7.22e-04  7.08e-04  6.47e-04  6.12e-04  5.92e-04  5.82e-04  5.21e-04  4.80e-04  4.58e-04  4.54e-04  4.15e-04  3.94e-04  3.68e-04  3.42e-04  3.30e-04  3.19e-04  2.98e-04  2.91e-04  2.85e-04  2.53e-04  2.41e-04  2.35e-04  2.21e-04  2.05e-04  1.98e-04  1.94e-04  1.84e-04  1.76e-04  1.61e-04  1.53e-04  1.43e-04  1.27e-04  1.15e-04  1.13e-04  1.08e-04  9.75e-05  9.54e-05  9.02e-05  8.91e-05  8.47e-05  7.66e-05  7.34e-05  7.03e-05  6.64e-05  6.28e-05  5.73e-05  5.57e-05  5.10e-05  4.91e-05  4.73e-05  4.30e-05  3.99e-05  3.72e-05  3.56e-05  3.51e-05  3.23e-05  3.05e-05  2.77e-05  2.42e-05  2.32e-05  2.15e-05  2.10e-05  1.99e-05  1.88e-05  1.82e-05  1.73e-05  1.58e-05  1.52e-05  1.37e-05  1.30e-05  1.19e-05  1.14e-05  1.03e-05  9.64e-06  8.85e-06  8.47e-06  8.10e-06  7.25e-06  6.46e-06  5.98e-06  5.37e-06  5.00e-06  4.76e-06  4.30e-06  3.79e-06  3.62e-06  3.58e-06  2.96e-06  2.75e-06  2.62e-06  2.57e-06  2.18e-06  2.07e-06  1.98e-06  1.77e-06  1.71e-06  1.48e-06  1.31e-06  1.23e-06  1.19e-06  1.12e-06  9.56e-07  8.05e-07  7.38e-07  6.46e-07  5.79e-07  5.67e-07  5.14e-07  4.51e-07  3.99e-07  3.64e-07  3.08e-07  2.52e-07  2.38e-07  2.18e-07  1.94e-07  1.23e-07  1.04e-07  9.73e-08  8.83e-08  5.83e-08  5.45e-08  5.09e-08  5.00e-08  3.53e-08  3.00e-08  2.26e-08  1.26e-30 
+       
+       
+ errPCA =          
+  5.4666291e-01  2.4696077e-01  2.0488358e-01  1.7001063e-01  1.3938384e-01  1.1844081e-01  9.8464235e-02  8.6941700e-02  7.7114154e-02  6.7726688e-02  6.0337766e-02  5.3941561e-02  4.8675432e-02  4.4296688e-02  4.0241985e-02  3.6481173e-02  3.3407656e-02  3.0446371e-02  2.7811005e-02  2.5318342e-02  2.2922891e-02  2.0997461e-02  1.9133865e-02  1.7576983e-02  1.6155997e-02  1.4801134e-02  1.3609409e-02  1.2438512e-02  1.1404096e-02  1.0541492e-02  9.7543899e-03  9.0211332e-03  8.3829613e-03  7.7868468e-03  7.2513286e-03  6.7205123e-03  6.2626749e-03  5.8172525e-03  5.3873248e-03  5.0279418e-03  4.6913191e-03  4.3910718e-03  4.1075636e-03  3.8302723e-03  3.6064350e-03  3.3965396e-03  3.1923372e-03  2.9975096e-03  2.8313209e-03  2.6670747e-03  2.5118322e-03  2.3570685e-03  2.2191284e-03  2.0854029e-03  1.9550871e-03  1.8436128e-03  1.7424966e-03  1.6432352e-03  1.5512382e-03  1.4622407e-03  1.3819962e-03  1.3040326e-03  1.2320558e-03  1.1616563e-03  1.0973146e-03  1.0337840e-03  9.7409874e-04  9.2180690e-04  8.7143375e-04  8.2405307e-04  7.7674549e-04  7.3281856e-04  6.9324944e-04  6.5444341e-04  6.1897024e-04  5.8543244e-04  5.5299037e-04  5.2110199e-04  4.9253817e-04  4.6624234e-04  4.4113557e-04  4.1625521e-04  3.9349575e-04  3.7191985e-04  3.5174979e-04  3.3299152e-04  3.1491209e-04  2.9741624e-04  2.8107283e-04  2.6513851e-04  2.4951932e-04  2.3563310e-04  2.2239624e-04  2.0952427e-04  1.9740150e-04  1.8615664e-04  1.7529724e-04  1.6468827e-04  1.5458382e-04  1.4492936e-04  1.3610199e-04  1.2771626e-04  1.1985117e-04  1.1289620e-04  1.0660630e-04  1.0041749e-04  9.4479090e-05  8.9136949e-05  8.3905719e-05  7.8958602e-05  7.4072672e-05  6.9428449e-05  6.5228415e-05  6.1206460e-05  5.7353534e-05  5.3713837e-05  5.0268622e-05  4.7128730e-05  4.4077747e-05  4.1284663e-05  3.8591812e-05  3.5999689e-05  3.3640314e-05  3.1455684e-05  2.9414885e-05  2.7463248e-05  2.5536641e-05  2.3767992e-05  2.2097475e-05  2.0578461e-05  1.9253826e-05  1.7981128e-05  1.6800472e-05  1.5648791e-05  1.4560183e-05  1.3527184e-05  1.2531006e-05  1.1582970e-05  1.0717861e-05  9.8862233e-06  9.1337144e-06  8.4198770e-06  7.7694497e-06  7.1433436e-06  6.5806133e-06  6.0521400e-06  5.5670434e-06  5.1029400e-06  4.6591152e-06  4.2614978e-06  3.9075131e-06  3.5795809e-06  3.2854076e-06  3.0111359e-06  2.7500314e-06  2.5141136e-06  2.3062812e-06  2.1078200e-06  1.9115516e-06  1.7492825e-06  1.5986514e-06  1.4548504e-06  1.3141240e-06  1.1947690e-06  1.0814748e-06  9.7297066e-07  8.7584709e-07  7.8233364e-07  7.0115684e-07  6.2935910e-07  5.6176576e-07  4.9664388e-07  4.3550604e-07  3.8308048e-07  3.3893283e-07  2.9845046e-07  2.6301764e-07  2.3126312e-07  2.0020337e-07  1.7202654e-07  1.4731463e-07  1.2546328e-07  1.0553647e-07  8.8634892e-08  7.4822978e-08  6.1757973e-08  4.9797692e-08  3.9139077e-08  3.2385784e-08  2.6706915e-08  2.1372273e-08  1.6532014e-08  1.3338177e-08  1.0348850e-08  7.5570437e-09  4.8140598e-09  2.8813476e-09  1.2394802e-09  0.0000000e+00  0.0000000e+00 
+       
+       
+       
+       
+ error_PCA                    =  1.0000000e-03 
+       
+ Number n_d of samples of X_d =  200 
+ Dimension n_x of X_d         =  402 
+ Dimension nu  of H           =   67 
+ Null-space dimension         =  133 
+       
+ L2 error error_nu            =  1.1829895e-02 
+       
+       
+ RmuPCA =          
+  8.27e+00  5.47e+00  7.68e-01  6.36e-01  5.59e-01  3.82e-01  3.64e-01  2.10e-01  1.79e-01  1.71e-01  1.35e-01  1.17e-01  9.61e-02  7.99e-02  7.40e-02  6.86e-02  5.61e-02  5.40e-02  4.81e-02  4.55e-02  4.37e-02  3.51e-02  3.40e-02  2.84e-02  2.59e-02  2.47e-02  2.17e-02  2.14e-02  1.89e-02  1.57e-02  1.44e-02  1.34e-02  1.16e-02  1.09e-02  9.77e-03  9.68e-03  8.35e-03  8.13e-03  7.84e-03  6.56e-03  6.14e-03  5.48e-03  5.17e-03  5.06e-03  4.08e-03  3.83e-03  3.73e-03  3.55e-03  3.03e-03  3.00e-03  2.83e-03  2.82e-03  2.52e-03  2.44e-03  2.38e-03  2.03e-03  1.84e-03  1.81e-03  1.68e-03  1.62e-03  1.46e-03  1.42e-03  1.31e-03  1.28e-03  1.17e-03  1.16e-03  1.09e-03 
+       
+       
+       
+       
+  ----- Elapsed time for Task3_PCA 
+       
+  Elapsed Time   =        2.77
+      
+       
+  ================================ Step2 Processing ================================ 
+       
+       
+  ------ Task5_ISDEProjectionBasis 
+       
+       
+       
+  ---  Parameters for the learning 
+       
+       
+  nu            =      67 
+  n_d           =     200 
+       
+  ind_generator = 1 
+       
+  ind_display_screen = 1 
+  ind_print          = 1 
+  ind_plot           = 1 
+  ind_parallel       = 1 
+       
+  mDP           =     100 
+  nbmDMAP       =      68 
+       
+  ind_basis_type     = 2 
+       
+  epsilonDIFFmin         =  1.0000000e+01 
+  step_epsilonDIFF       =  1.0000000e+00 
+  iterlimit_epsilonDIFF  =     220 
+  comp_ref               =   0.1 
+       
+       
+ 
+ ----- sub_projection_basis_isotropic_kernel: construction of the DMAPS basis for the isotropic kernel 
+ 
+
+ n_d              =     200 
+ mDP              =     100 
+ nbmDMAP          =      68 
+
+ epsilonDIFFmin   =  1.0000000e+01 
+ step_epsilonDIFF =  1.0000000e+00 
+ epsilonDIFF      =  1.7200000e+02 
+
+ eigenvalues of the transition matrix 
+ 
+     1  1.00000000000e+00 
+     2  3.11585751288e-03 
+     3  3.09841437103e-03 
+     4  3.09753966814e-03 
+     5  3.09106968731e-03 
+     6  3.07344455230e-03 
+     7  3.06701629774e-03 
+     8  3.05313137772e-03 
+     9  3.05070573912e-03 
+    10  3.04846110455e-03 
+    11  3.04753182421e-03 
+    12  3.04389567645e-03 
+    13  3.04182002725e-03 
+    14  3.04057329963e-03 
+    15  3.03916579839e-03 
+    16  3.03738465101e-03 
+    17  3.03401724376e-03 
+    18  3.03296805064e-03 
+    19  3.03133430303e-03 
+    20  3.02958287463e-03 
+    21  3.02804980203e-03 
+    22  3.02623643083e-03 
+    23  3.02527687475e-03 
+    24  3.02395574391e-03 
+    25  3.02355754790e-03 
+    26  3.02223759653e-03 
+    27  3.02135069387e-03 
+    28  3.01970139534e-03 
+    29  3.01900325089e-03 
+    30  3.01766712417e-03 
+    31  3.01707562406e-03 
+    32  3.01629797156e-03 
+    33  3.01548844250e-03 
+    34  3.01425553672e-03 
+    35  3.01242829177e-03 
+    36  3.01192305578e-03 
+    37  3.01084599142e-03 
+    38  3.01015273693e-03 
+    39  3.00936413009e-03 
+    40  3.00815284947e-03 
+    41  3.00725514041e-03 
+    42  3.00606137573e-03 
+    43  3.00384639977e-03 
+    44  3.00336440430e-03 
+    45  3.00219457695e-03 
+    46  3.00132359392e-03 
+    47  3.00089550504e-03 
+    48  3.00058750754e-03 
+    49  2.99806739376e-03 
+    50  2.99790210294e-03 
+    51  2.99636460542e-03 
+    52  2.99545574347e-03 
+    53  2.99331340991e-03 
+    54  2.99218987496e-03 
+    55  2.99065757381e-03 
+    56  2.98937380155e-03 
+    57  2.98870915345e-03 
+    58  2.98768234881e-03 
+    59  2.98583043847e-03 
+    60  2.98379026081e-03 
+    61  2.98215359847e-03 
+    62  2.98190080049e-03 
+    63  2.98033365503e-03 
+    64  2.97895342428e-03 
+    65  2.97879049699e-03 
+    66  2.97519509957e-03 
+    67  2.97090598146e-03 
+    68  2.96871981216e-03 
+    69  2.95569426325e-04 
+    70  2.67412098145e-04 
+    71  2.64163749357e-04 
+    72  2.37678003869e-04 
+    73  2.31087513370e-04 
+    74  2.27365981481e-04 
+    75  2.22294565269e-04 
+    76  2.12375986159e-04 
+    77  2.01968310027e-04 
+    78  1.92767268750e-04 
+    79  1.82630197029e-04 
+    80  1.75237629939e-04 
+    81  1.70761212308e-04 
+    82  1.65297017645e-04 
+    83  1.60231530781e-04 
+    84  1.55532430214e-04 
+    85  1.54283646674e-04 
+    86  1.49411673581e-04 
+    87  1.44533878316e-04 
+    88  1.40091652818e-04 
+    89  1.34986514360e-04 
+    90  1.33979114026e-04 
+    91  1.30968102959e-04 
+    92  1.27439907637e-04 
+    93  1.27049530846e-04 
+    94  1.24825835379e-04 
+    95  1.22983263998e-04 
+    96  1.21175513098e-04 
+    97  1.18792405114e-04 
+    98  1.14693678679e-04 
+    99  1.13853549058e-04 
+   100  1.12707323712e-04 
+      
+       
+ -------   Elapsed time for Task5_ISDEProjectionBasis 
+       
+ Elapsed Time   =       10.75
+      
+ 
+  ------ Task6_SolverDirect 
+ 
+ 
+ 
+  ---  Parameters for the learning 
+ 
+ 
+  nu            =      67 
+ n_d           =     200 
+ nbMC          =     100 
+ n_ar          =   20000 
+
+  ind_generator = 1 
+ icorrectif    = 1 
+
+ 
+  f0_ref        =   4.0000 
+ ind_f0        =       0   
+ f0            =   4.0000 
+ coeffDeltar   =   20   
+ Deltar        =  2.0936315e-01
+ M0transient   =      30   
+ M0estim       =    22.00   
+
+  nbmDMAP       =      68 
+
+  ind_constraints  = 2 
+    ind_coupling  = 0    
+    iter_limit    =     400    
+    epsc          =  1.0000000e-03 
+    minVarH       = 0.999000  
+    maxVarH       = 1.001000  
+    alpha_relax1  =   0.0010  
+    iter_relax2   =      20    
+    alpha_relax2  =   0.3000  
+
+ s           =  8.9160308e-01 
+shss        =  7.4744427e-01 
+sh          =  6.6642361e-01 
+
+  ind_display_screen = 1 
+ ind_print          = 1 
+ ind_plot           = 1 
+ ind_parallel       = 1 
+
+  ind_Kullback       = 1 
+ ind_Entropy        = 1 
+ ind_MutualInfo     = 1 
+
+ 
+ 
+ --- Constraints parameters in solverDirect with constraints 
+ 
+     ind_constraints =       2 
+     nu              =      67 
+     mhc             =     134 
+ 
+ 
+          --- iter number =       1 
+              err_iter    =  2.9264328e-01 
+              tol_iter    =  1.0000000e+00 
+ 
+ 
+          --- iter number =       2 
+              err_iter    =  2.9256425e-01 
+              tol_iter    =  2.7007238e-04 
+ 
+ 
+          --- iter number =       3 
+              err_iter    =  2.9124411e-01 
+              tol_iter    =  4.5225438e-03 
+ 
+ 
+          --- iter number =       4 
+              err_iter    =  2.8875185e-01 
+              tol_iter    =  8.5940513e-03 
+ 
+ 
+          --- iter number =       5 
+              err_iter    =  2.8523910e-01 
+              tol_iter    =  1.2239731e-02 
+ 
+ 
+          --- iter number =       6 
+              err_iter    =  2.8090915e-01 
+              tol_iter    =  1.5296174e-02 
+ 
+ 
+          --- iter number =       7 
+              err_iter    =  2.7597551e-01 
+              tol_iter    =  1.7718701e-02 
+ 
+ 
+          --- iter number =       8 
+              err_iter    =  2.7062495e-01 
+              tol_iter    =  1.9577618e-02 
+ 
+ 
+          --- iter number =       9 
+              err_iter    =  2.6499602e-01 
+              tol_iter    =  2.1018328e-02 
+ 
+ 
+          --- iter number =      10 
+              err_iter    =  2.5917560e-01 
+              tol_iter    =  2.2208057e-02 
+ 
+ 
+          --- iter number =      11 
+              err_iter    =  2.5320812e-01 
+              tol_iter    =  2.3293027e-02 
+ 
+ 
+          --- iter number =      12 
+              err_iter    =  2.4710988e-01 
+              tol_iter    =  2.4377436e-02 
+ 
+ 
+          --- iter number =      13 
+              err_iter    =  2.4088262e-01 
+              tol_iter    =  2.5521966e-02 
+ 
+ 
+          --- iter number =      14 
+              err_iter    =  2.3452335e-01 
+              tol_iter    =  2.6752993e-02 
+ 
+ 
+          --- iter number =      15 
+              err_iter    =  2.2803039e-01 
+              tol_iter    =  2.8074414e-02 
+ 
+ 
+          --- iter number =      16 
+              err_iter    =  2.2140621e-01 
+              tol_iter    =  2.9477687e-02 
+ 
+ 
+          --- iter number =      17 
+              err_iter    =  2.1465837e-01 
+              tol_iter    =  3.0948834e-02 
+ 
+ 
+          --- iter number =      18 
+              err_iter    =  2.0779919e-01 
+              tol_iter    =  3.2472725e-02 
+ 
+ 
+          --- iter number =      19 
+              err_iter    =  2.0084501e-01 
+              tol_iter    =  3.4035379e-02 
+ 
+ 
+          --- iter number =      20 
+              err_iter    =  1.9381513e-01 
+              tol_iter    =  3.5624985e-02 
+ 
+ 
+          --- iter number =      21 
+              err_iter    =  1.8673086e-01 
+              tol_iter    =  3.7232142e-02 
+ 
+ 
+          --- iter number =      22 
+              err_iter    =  1.7997165e-01 
+              tol_iter    =  3.6864808e-02 
+ 
+ 
+          --- iter number =      23 
+              err_iter    =  1.7351155e-01 
+              tol_iter    =  3.6551129e-02 
+ 
+ 
+          --- iter number =      24 
+              err_iter    =  1.6732925e-01 
+              tol_iter    =  3.6276766e-02 
+ 
+ 
+          --- iter number =      25 
+              err_iter    =  1.6140666e-01 
+              tol_iter    =  3.6032501e-02 
+ 
+ 
+          --- iter number =      26 
+              err_iter    =  1.5572803e-01 
+              tol_iter    =  3.5812115e-02 
+ 
+ 
+          --- iter number =      27 
+              err_iter    =  1.5027938e-01 
+              tol_iter    =  3.5611232e-02 
+ 
+ 
+          --- iter number =      28 
+              err_iter    =  1.4504814e-01 
+              tol_iter    =  3.5426663e-02 
+ 
+ 
+          --- iter number =      29 
+              err_iter    =  1.4002291e-01 
+              tol_iter    =  3.5256007e-02 
+ 
+ 
+          --- iter number =      30 
+              err_iter    =  1.3519322e-01 
+              tol_iter    =  3.5097407e-02 
+ 
+ 
+          --- iter number =      31 
+              err_iter    =  1.3054945e-01 
+              tol_iter    =  3.4949392e-02 
+ 
+ 
+          --- iter number =      32 
+              err_iter    =  1.2608267e-01 
+              tol_iter    =  3.4810773e-02 
+ 
+ 
+          --- iter number =      33 
+              err_iter    =  1.2178458e-01 
+              tol_iter    =  3.4680570e-02 
+ 
+ 
+          --- iter number =      34 
+              err_iter    =  1.1764744e-01 
+              tol_iter    =  3.4557964e-02 
+ 
+ 
+          --- iter number =      35 
+              err_iter    =  1.1366399e-01 
+              tol_iter    =  3.4442262e-02 
+ 
+ 
+          --- iter number =      36 
+              err_iter    =  1.0982744e-01 
+              tol_iter    =  3.4332867e-02 
+ 
+ 
+          --- iter number =      37 
+              err_iter    =  1.0613139e-01 
+              tol_iter    =  3.4229264e-02 
+ 
+ 
+          --- iter number =      38 
+              err_iter    =  1.0256980e-01 
+              tol_iter    =  3.4131001e-02 
+ 
+ 
+          --- iter number =      39 
+              err_iter    =  9.9136981e-02 
+              tol_iter    =  3.4037680e-02 
+ 
+ 
+          --- iter number =      40 
+              err_iter    =  9.5827561e-02 
+              tol_iter    =  3.3948948e-02 
+ 
+ 
+          --- iter number =      41 
+              err_iter    =  9.2636442e-02 
+              tol_iter    =  3.3864489e-02 
+ 
+ 
+          --- iter number =      42 
+              err_iter    =  8.9558798e-02 
+              tol_iter    =  3.3784020e-02 
+ 
+ 
+          --- iter number =      43 
+              err_iter    =  8.6590049e-02 
+              tol_iter    =  3.3707283e-02 
+ 
+ 
+          --- iter number =      44 
+              err_iter    =  8.3725842e-02 
+              tol_iter    =  3.3634048e-02 
+ 
+ 
+          --- iter number =      45 
+              err_iter    =  8.0962042e-02 
+              tol_iter    =  3.3564101e-02 
+ 
+ 
+          --- iter number =      46 
+              err_iter    =  7.8294710e-02 
+              tol_iter    =  3.3497250e-02 
+ 
+ 
+          --- iter number =      47 
+              err_iter    =  7.5720097e-02 
+              tol_iter    =  3.3433318e-02 
+ 
+ 
+          --- iter number =      48 
+              err_iter    =  7.3234628e-02 
+              tol_iter    =  3.3372140e-02 
+ 
+ 
+          --- iter number =      49 
+              err_iter    =  7.0834894e-02 
+              tol_iter    =  3.3313565e-02 
+ 
+ 
+          --- iter number =      50 
+              err_iter    =  6.8517638e-02 
+              tol_iter    =  3.3257456e-02 
+ 
+ 
+          --- iter number =      51 
+              err_iter    =  6.6279754e-02 
+              tol_iter    =  3.3203681e-02 
+ 
+ 
+          --- iter number =      52 
+              err_iter    =  6.4118268e-02 
+              tol_iter    =  3.3152121e-02 
+ 
+ 
+          --- iter number =      53 
+              err_iter    =  6.2030340e-02 
+              tol_iter    =  3.3102664e-02 
+ 
+ 
+          --- iter number =      54 
+              err_iter    =  6.0013252e-02 
+              tol_iter    =  3.3055205e-02 
+ 
+ 
+          --- iter number =      55 
+              err_iter    =  5.8064402e-02 
+              tol_iter    =  3.3009647e-02 
+ 
+ 
+          --- iter number =      56 
+              err_iter    =  5.6181296e-02 
+              tol_iter    =  3.2965898e-02 
+ 
+ 
+          --- iter number =      57 
+              err_iter    =  5.4361546e-02 
+              tol_iter    =  3.2923873e-02 
+ 
+ 
+          --- iter number =      58 
+              err_iter    =  5.2602865e-02 
+              tol_iter    =  3.2883490e-02 
+ 
+ 
+          --- iter number =      59 
+              err_iter    =  5.0903056e-02 
+              tol_iter    =  3.2844674e-02 
+ 
+ 
+          --- iter number =      60 
+              err_iter    =  4.9260013e-02 
+              tol_iter    =  3.2807354e-02 
+ 
+ 
+          --- iter number =      61 
+              err_iter    =  4.7671716e-02 
+              tol_iter    =  3.2771462e-02 
+ 
+ 
+          --- iter number =      62 
+              err_iter    =  4.6136224e-02 
+              tol_iter    =  3.2736935e-02 
+ 
+ 
+          --- iter number =      63 
+              err_iter    =  4.4651673e-02 
+              tol_iter    =  3.2703712e-02 
+ 
+ 
+          --- iter number =      64 
+              err_iter    =  4.3216274e-02 
+              tol_iter    =  3.2671738e-02 
+ 
+ 
+          --- iter number =      65 
+              err_iter    =  4.1828305e-02 
+              tol_iter    =  3.2640959e-02 
+ 
+ 
+          --- iter number =      66 
+              err_iter    =  4.0486114e-02 
+              tol_iter    =  3.2611323e-02 
+ 
+ 
+          --- iter number =      67 
+              err_iter    =  3.9188110e-02 
+              tol_iter    =  3.2582782e-02 
+ 
+ 
+          --- iter number =      68 
+              err_iter    =  3.7932764e-02 
+              tol_iter    =  3.2555291e-02 
+ 
+ 
+          --- iter number =      69 
+              err_iter    =  3.6718604e-02 
+              tol_iter    =  3.2528805e-02 
+ 
+ 
+          --- iter number =      70 
+              err_iter    =  3.5544215e-02 
+              tol_iter    =  3.2503285e-02 
+ 
+ 
+          --- iter number =      71 
+              err_iter    =  3.4408233e-02 
+              tol_iter    =  3.2478689e-02 
+ 
+ 
+          --- iter number =      72 
+              err_iter    =  3.3309346e-02 
+              tol_iter    =  3.2454982e-02 
+ 
+ 
+          --- iter number =      73 
+              err_iter    =  3.2246292e-02 
+              tol_iter    =  3.2432127e-02 
+ 
+ 
+          --- iter number =      74 
+              err_iter    =  3.1217853e-02 
+              tol_iter    =  3.2410090e-02 
+ 
+ 
+          --- iter number =      75 
+              err_iter    =  3.0222856e-02 
+              tol_iter    =  3.2388840e-02 
+ 
+ 
+          --- iter number =      76 
+              err_iter    =  2.9260173e-02 
+              tol_iter    =  3.2368344e-02 
+ 
+ 
+          --- iter number =      77 
+              err_iter    =  2.8328713e-02 
+              tol_iter    =  3.2348574e-02 
+ 
+ 
+          --- iter number =      78 
+              err_iter    =  2.7427429e-02 
+              tol_iter    =  3.2329501e-02 
+ 
+ 
+          --- iter number =      79 
+              err_iter    =  2.6555308e-02 
+              tol_iter    =  3.2311099e-02 
+ 
+ 
+          --- iter number =      80 
+              err_iter    =  2.5711375e-02 
+              tol_iter    =  3.2293342e-02 
+ 
+ 
+          --- iter number =      81 
+              err_iter    =  2.4894690e-02 
+              tol_iter    =  3.2276205e-02 
+ 
+ 
+          --- iter number =      82 
+              err_iter    =  2.4104343e-02 
+              tol_iter    =  3.2259665e-02 
+ 
+ 
+          --- iter number =      83 
+              err_iter    =  2.3339462e-02 
+              tol_iter    =  3.2243699e-02 
+ 
+ 
+          --- iter number =      84 
+              err_iter    =  2.2599199e-02 
+              tol_iter    =  3.2228286e-02 
+ 
+ 
+          --- iter number =      85 
+              err_iter    =  2.1882742e-02 
+              tol_iter    =  3.2213405e-02 
+ 
+ 
+          --- iter number =      86 
+              err_iter    =  2.1189303e-02 
+              tol_iter    =  3.2199036e-02 
+ 
+ 
+          --- iter number =      87 
+              err_iter    =  2.0518123e-02 
+              tol_iter    =  3.2185161e-02 
+ 
+ 
+          --- iter number =      88 
+              err_iter    =  1.9868469e-02 
+              tol_iter    =  3.2171761e-02 
+ 
+ 
+          --- iter number =      89 
+              err_iter    =  1.9239634e-02 
+              tol_iter    =  3.2158818e-02 
+ 
+ 
+          --- iter number =      90 
+              err_iter    =  1.8630934e-02 
+              tol_iter    =  3.2146317e-02 
+ 
+ 
+          --- iter number =      91 
+              err_iter    =  1.8041710e-02 
+              tol_iter    =  3.2134241e-02 
+ 
+ 
+          --- iter number =      92 
+              err_iter    =  1.7471325e-02 
+              tol_iter    =  3.2122575e-02 
+ 
+ 
+          --- iter number =      93 
+              err_iter    =  1.6919163e-02 
+              tol_iter    =  3.2111303e-02 
+ 
+ 
+          --- iter number =      94 
+              err_iter    =  1.6384631e-02 
+              tol_iter    =  3.2100412e-02 
+ 
+ 
+          --- iter number =      95 
+              err_iter    =  1.5867153e-02 
+              tol_iter    =  3.2089889e-02 
+ 
+ 
+          --- iter number =      96 
+              err_iter    =  1.5366174e-02 
+              tol_iter    =  3.2079719e-02 
+ 
+ 
+          --- iter number =      97 
+              err_iter    =  1.4881160e-02 
+              tol_iter    =  3.2069891e-02 
+ 
+ 
+          --- iter number =      98 
+              err_iter    =  1.4411592e-02 
+              tol_iter    =  3.2060392e-02 
+ 
+ 
+          --- iter number =      99 
+              err_iter    =  1.3956968e-02 
+              tol_iter    =  3.2051211e-02 
+ 
+ 
+          --- iter number =     100 
+              err_iter    =  1.3516806e-02 
+              tol_iter    =  3.2042337e-02 
+ 
+ 
+          --- iter number =     101 
+              err_iter    =  1.3090638e-02 
+              tol_iter    =  3.2033758e-02 
+ 
+ 
+          --- iter number =     102 
+              err_iter    =  1.2678012e-02 
+              tol_iter    =  3.2025465e-02 
+ 
+ 
+          --- iter number =     103 
+              err_iter    =  1.2278490e-02 
+              tol_iter    =  3.2017447e-02 
+ 
+ 
+          --- iter number =     104 
+              err_iter    =  1.1891650e-02 
+              tol_iter    =  3.2009695e-02 
+ 
+ 
+          --- iter number =     105 
+              err_iter    =  1.1517085e-02 
+              tol_iter    =  3.2002200e-02 
+ 
+ 
+          --- iter number =     106 
+              err_iter    =  1.1154398e-02 
+              tol_iter    =  3.1994953e-02 
+ 
+ 
+          --- iter number =     107 
+              err_iter    =  1.0803209e-02 
+              tol_iter    =  3.1987945e-02 
+ 
+ 
+          --- iter number =     108 
+              err_iter    =  1.0463148e-02 
+              tol_iter    =  3.1981167e-02 
+ 
+ 
+          --- iter number =     109 
+              err_iter    =  1.0133857e-02 
+              tol_iter    =  3.1974613e-02 
+ 
+ 
+          --- iter number =     110 
+              err_iter    =  9.8149918e-03 
+              tol_iter    =  3.1968275e-02 
+ 
+ 
+          --- iter number =     111 
+              err_iter    =  9.5062181e-03 
+              tol_iter    =  3.1962144e-02 
+ 
+ 
+          --- iter number =     112 
+              err_iter    =  9.2072129e-03 
+              tol_iter    =  3.1956215e-02 
+ 
+ 
+          --- iter number =     113 
+              err_iter    =  8.9176636e-03 
+              tol_iter    =  3.1950480e-02 
+ 
+ 
+          --- iter number =     114 
+              err_iter    =  8.6372681e-03 
+              tol_iter    =  3.1944932e-02 
+ 
+ 
+          --- iter number =     115 
+              err_iter    =  8.3657338e-03 
+              tol_iter    =  3.1939565e-02 
+ 
+ 
+          --- iter number =     116 
+              err_iter    =  8.1027780e-03 
+              tol_iter    =  3.1934374e-02 
+ 
+ 
+          --- iter number =     117 
+              err_iter    =  7.8481270e-03 
+              tol_iter    =  3.1929352e-02 
+ 
+ 
+          --- iter number =     118 
+              err_iter    =  7.6015160e-03 
+              tol_iter    =  3.1924493e-02 
+ 
+ 
+          --- iter number =     119 
+              err_iter    =  7.3626888e-03 
+              tol_iter    =  3.1919792e-02 
+ 
+ 
+          --- iter number =     120 
+              err_iter    =  7.1313977e-03 
+              tol_iter    =  3.1915244e-02 
+ 
+ 
+          --- iter number =     121 
+              err_iter    =  6.9074027e-03 
+              tol_iter    =  3.1910844e-02 
+ 
+ 
+          --- iter number =     122 
+              err_iter    =  6.6904718e-03 
+              tol_iter    =  3.1906586e-02 
+ 
+ 
+          --- iter number =     123 
+              err_iter    =  6.4803805e-03 
+              tol_iter    =  3.1902466e-02 
+ 
+ 
+          --- iter number =     124 
+              err_iter    =  6.2769114e-03 
+              tol_iter    =  3.1898480e-02 
+ 
+ 
+          --- iter number =     125 
+              err_iter    =  6.0798542e-03 
+              tol_iter    =  3.1894622e-02 
+ 
+ 
+          --- iter number =     126 
+              err_iter    =  5.8890054e-03 
+              tol_iter    =  3.1890889e-02 
+ 
+ 
+          --- iter number =     127 
+              err_iter    =  5.7041680e-03 
+              tol_iter    =  3.1887276e-02 
+ 
+ 
+          --- iter number =     128 
+              err_iter    =  5.5251515e-03 
+              tol_iter    =  3.1883780e-02 
+ 
+ 
+          --- iter number =     129 
+              err_iter    =  5.3517712e-03 
+              tol_iter    =  3.1880397e-02 
+ 
+ 
+          --- iter number =     130 
+              err_iter    =  5.1838485e-03 
+              tol_iter    =  3.1877122e-02 
+ 
+ 
+          --- iter number =     131 
+              err_iter    =  5.0212108e-03 
+              tol_iter    =  3.1873953e-02 
+ 
+ 
+          --- iter number =     132 
+              err_iter    =  4.8636905e-03 
+              tol_iter    =  3.1870885e-02 
+ 
+ 
+          --- iter number =     133 
+              err_iter    =  4.7111258e-03 
+              tol_iter    =  3.1867916e-02 
+ 
+ 
+          --- iter number =     134 
+              err_iter    =  4.5633598e-03 
+              tol_iter    =  3.1865043e-02 
+ 
+ 
+          --- iter number =     135 
+              err_iter    =  4.4202409e-03 
+              tol_iter    =  3.1862261e-02 
+ 
+ 
+          --- iter number =     136 
+              err_iter    =  4.2816221e-03 
+              tol_iter    =  3.1859569e-02 
+ 
+ 
+          --- iter number =     137 
+              err_iter    =  4.1473612e-03 
+              tol_iter    =  3.1856963e-02 
+ 
+ 
+          --- iter number =     138 
+              err_iter    =  4.0173205e-03 
+              tol_iter    =  3.1854440e-02 
+ 
+ 
+          --- iter number =     139 
+              err_iter    =  3.8913668e-03 
+              tol_iter    =  3.1851998e-02 
+ 
+ 
+          --- iter number =     140 
+              err_iter    =  3.7693709e-03 
+              tol_iter    =  3.1849634e-02 
+ 
+ 
+          --- iter number =     141 
+              err_iter    =  3.6512080e-03 
+              tol_iter    =  3.1847346e-02 
+ 
+ 
+          --- iter number =     142 
+              err_iter    =  3.5367572e-03 
+              tol_iter    =  3.1845130e-02 
+ 
+ 
+          --- iter number =     143 
+              err_iter    =  3.4259013e-03 
+              tol_iter    =  3.1842986e-02 
+ 
+ 
+          --- iter number =     144 
+              err_iter    =  3.3185269e-03 
+              tol_iter    =  3.1840909e-02 
+ 
+ 
+          --- iter number =     145 
+              err_iter    =  3.2145243e-03 
+              tol_iter    =  3.1838899e-02 
+ 
+ 
+          --- iter number =     146 
+              err_iter    =  3.1137873e-03 
+              tol_iter    =  3.1836953e-02 
+ 
+ 
+          --- iter number =     147 
+              err_iter    =  3.0162128e-03 
+              tol_iter    =  3.1835069e-02 
+ 
+ 
+          --- iter number =     148 
+              err_iter    =  2.9217012e-03 
+              tol_iter    =  3.1833245e-02 
+ 
+ 
+          --- iter number =     149 
+              err_iter    =  2.8301562e-03 
+              tol_iter    =  3.1831479e-02 
+ 
+ 
+          --- iter number =     150 
+              err_iter    =  2.7414842e-03 
+              tol_iter    =  3.1829769e-02 
+ 
+ 
+          --- iter number =     151 
+              err_iter    =  2.6555947e-03 
+              tol_iter    =  3.1828113e-02 
+ 
+ 
+          --- iter number =     152 
+              err_iter    =  2.5724003e-03 
+              tol_iter    =  3.1826510e-02 
+ 
+ 
+          --- iter number =     153 
+              err_iter    =  2.4918161e-03 
+              tol_iter    =  3.1824958e-02 
+ 
+ 
+          --- iter number =     154 
+              err_iter    =  2.4137599e-03 
+              tol_iter    =  3.1823455e-02 
+ 
+ 
+          --- iter number =     155 
+              err_iter    =  2.3381522e-03 
+              tol_iter    =  3.1822000e-02 
+ 
+ 
+          --- iter number =     156 
+              err_iter    =  2.2649161e-03 
+              tol_iter    =  3.1820591e-02 
+ 
+ 
+          --- iter number =     157 
+              err_iter    =  2.1939768e-03 
+              tol_iter    =  3.1819226e-02 
+ 
+ 
+          --- iter number =     158 
+              err_iter    =  2.1252622e-03 
+              tol_iter    =  3.1817905e-02 
+ 
+ 
+          --- iter number =     159 
+              err_iter    =  2.0587024e-03 
+              tol_iter    =  3.1816626e-02 
+ 
+ 
+          --- iter number =     160 
+              err_iter    =  1.9942296e-03 
+              tol_iter    =  3.1815387e-02 
+ 
+ 
+          --- iter number =     161 
+              err_iter    =  1.9317782e-03 
+              tol_iter    =  3.1814187e-02 
+ 
+ 
+          --- iter number =     162 
+              err_iter    =  1.8712848e-03 
+              tol_iter    =  3.1813026e-02 
+ 
+ 
+          --- iter number =     163 
+              err_iter    =  1.8126877e-03 
+              tol_iter    =  3.1811901e-02 
+ 
+ 
+          --- iter number =     164 
+              err_iter    =  1.7559274e-03 
+              tol_iter    =  3.1810811e-02 
+ 
+ 
+          --- iter number =     165 
+              err_iter    =  1.7009463e-03 
+              tol_iter    =  3.1809756e-02 
+ 
+ 
+          --- iter number =     166 
+              err_iter    =  1.6476883e-03 
+              tol_iter    =  3.1808735e-02 
+ 
+ 
+          --- iter number =     167 
+              err_iter    =  1.5960996e-03 
+              tol_iter    =  3.1807745e-02 
+ 
+ 
+          --- iter number =     168 
+              err_iter    =  1.5461275e-03 
+              tol_iter    =  3.1806787e-02 
+ 
+ 
+          --- iter number =     169 
+              err_iter    =  1.4977214e-03 
+              tol_iter    =  3.1805860e-02 
+ 
+ 
+          --- iter number =     170 
+              err_iter    =  1.4508320e-03 
+              tol_iter    =  3.1804961e-02 
+ 
+ 
+          --- iter number =     171 
+              err_iter    =  1.4054119e-03 
+              tol_iter    =  3.1804091e-02 
+ 
+ 
+          --- iter number =     172 
+              err_iter    =  1.3614149e-03 
+              tol_iter    =  3.1803248e-02 
+ 
+ 
+          --- iter number =     173 
+              err_iter    =  1.3187963e-03 
+              tol_iter    =  3.1802432e-02 
+ 
+ 
+          --- iter number =     174 
+              err_iter    =  1.2775128e-03 
+              tol_iter    =  3.1801642e-02 
+ 
+ 
+          --- iter number =     175 
+              err_iter    =  1.2375227e-03 
+              tol_iter    =  3.1800876e-02 
+ 
+ 
+          --- iter number =     176 
+              err_iter    =  1.1987852e-03 
+              tol_iter    =  3.1800135e-02 
+ 
+ 
+          --- iter number =     177 
+              err_iter    =  1.1612612e-03 
+              tol_iter    =  3.1799417e-02 
+ 
+ 
+          --- iter number =     178 
+              err_iter    =  1.1249125e-03 
+              tol_iter    =  3.1798721e-02 
+ 
+ 
+          --- iter number =     179 
+              err_iter    =  1.0897022e-03 
+              tol_iter    =  3.1798048e-02 
+ 
+ 
+          --- iter number =     180 
+              err_iter    =  1.0555948e-03 
+              tol_iter    =  3.1797396e-02 
+ 
+ 
+          --- iter number =     181 
+              err_iter    =  1.0225556e-03 
+              tol_iter    =  3.1796764e-02 
+ 
+ 
+          --- iter number =     182 
+              err_iter    =  9.9055106e-04 
+              tol_iter    =  3.1796152e-02 
+ 
+ 
+  --- Convergence with criterion 2: convergence obtained either with variance-values 
+                                    of H-components satisfied or relative error of the 
+                                    constraint satisfaction is less than the tolerance 
+                
+ 
+ 
+  --- Convergence of the iteration algorithm in sub_solverDirect_constraint123   
+                                                     
+      iter             =     182    
+      err_iter         =  9.9055106e-04 
+      tol_iter         =  3.1796152e-02 
+      norm_lambda_iter =  1.6140185e+00 
+      condGammaS_iter  =  2.1059599e+01 
+       
+ 
+ 
+ ----- RHmean_ar =          
+                  [ 3.23297799e-08 -1.25671415e-06 -8.91245902e-08 -5.91990410e-07
+ -7.45468070e-08 -2.83918706e-07 -1.97631927e-07 -4.76192875e-07
+ -1.07277976e-07 -1.59548904e-07  5.38450082e-07  2.58103929e-07
+  8.46317666e-07 -1.60371880e-06  3.68301546e-08  1.07491122e-07
+ -1.44806894e-07 -2.80292442e-07 -4.20234108e-08  1.36344611e-07
+ -1.64578597e-07  1.65112849e-07 -3.00853381e-07  8.84509804e-07
+ -4.52093396e-07 -1.37823655e-07 -1.15789190e-07  1.01112509e-06
+  4.89862476e-07 -5.53687776e-08 -7.21578404e-07  7.25177903e-08
+ -5.65704288e-07  1.00377606e-07 -8.26648320e-08  8.32403982e-08
+ -3.29701566e-07  9.98270687e-07 -1.18240371e-06  2.84977833e-07
+  7.68920402e-07 -1.46065566e-06 -6.71903619e-07  1.82807694e-07
+  6.58402056e-07  3.41585069e-07 -1.39053765e-07 -8.07344528e-07
+  4.03001470e-07 -4.45645723e-07 -2.03966209e-07  7.11268888e-07
+  1.24264630e-06 -9.24663252e-07  1.45110807e-07 -9.35843410e-07
+ -8.33678285e-08 -2.53663068e-07  3.63319566e-07 -6.45832285e-07
+ -1.45005570e-07 -5.12524941e-07  1.50317060e-07 -3.21462302e-07
+ -2.31015122e-07  1.80812506e-07  1.55849700e-06] 
+ 
+ 
+ ----- diag(MatRHcov_ar) =          
+                  [1.00001212 0.99898254 0.99920726 0.99875941 0.99999346 0.99961457
+ 0.99943998 0.99912819 0.99967471 0.9997172  0.99908434 0.99929419
+ 0.99931324 0.99867148 0.99927341 0.99992367 0.99897839 0.99935357
+ 0.99951001 0.9994129  0.99929469 0.99955126 0.99892759 0.99919698
+ 0.99934855 0.99897191 0.99876948 0.99931619 0.99836429 0.99920217
+ 0.99916674 0.99957481 0.99873887 0.99912721 0.99868676 0.99945623
+ 0.99906567 0.99904094 0.9984252  0.99923273 0.99912068 0.99816425
+ 0.99897385 0.99914817 0.99919746 0.99870796 0.99947834 0.99869809
+ 0.99940534 0.99928828 0.99891498 0.99902686 0.99823218 0.99901007
+ 0.99903383 0.99905573 0.99970365 0.99938632 0.99863556 0.99937237
+ 0.99917773 0.99788787 0.99924419 0.99946827 0.99931785 0.99965293
+ 0.99885197] 
+ 
+ 
+ ----- Relative Frobenius norm of the extra-diagonal terms of MatRHcov_ar =  5.7367199e-02 
+ 
+ 
+ 
+ 
+  --- Concentration of the measure of H_ar with respect to H_d 
+                                                  
+          d^2(m_opt)_ar =   1.9332858e-01 
+
+ 
+ 
+ 
+  --- Kullback-Leibler divergence of H_ar with respect to H_d 
+                                                  
+         divKL =   7.8810820e+00 
+
+ 
+ 
+ 
+  --- Entropy of Hd and Har 
+ 
+         entropy_Hd   =   5.9180006e+01 
+         entropy_Har  =   5.9405190e+01 
+
+ 
+ 
+ 
+  --- Mutual Information iHd and iHar for Hd and Har 
+ 
+         iHd   =   4.0037540e+01 
+         iHar  =   3.9118798e+01 
+
+ 
+ 
+ 
+ -------   Elapsed time for Task6_SolverDirect 
+ 
+ Elapsed Time   =      439.55
+
+       
+  ================================ Step3 Post_processing ================================ 
+       
+       
+  ------ Task10_PCAback 
+       
+       
+ n_x    =       402 
+ n_d    =       200 
+ nu     =        67 
+ n_ar   =     20000 
+ nx_obs =       202 
+       
+       
+       
+  ----- Elapsed time for Task10_PCAback 
+       
+  Elapsed Time   =        0.04
+      
+ 
+ ------ Task11_ScalingBack 
+
+
+
+n_x        =       402 
+nbreal     =       400 
+nbpos      =         2 
+
+nx_obs      =       202 
+nbreal_obs =       200 
+nbpos_obs  =         2 
+
+
+
+ ------ Elapsed time for Task11_ScalingBack 
+
+ Elapsed Time   =        0.06
+
+
+  ------ Task12_PlotXdXar 
+ 
+       
+  ------ Task10_PCAback 
+       
+       
+ n_x    =       402 
+ n_d    =       200 
+ nu     =        67 
+ n_ar   =     20000 
+ nx_obs =       202 
+       
+       
+       
+  ----- Elapsed time for Task10_PCAback 
+       
+  Elapsed Time   =        0.01
+      
+ 
+ ------ Task11_ScalingBack 
+
+
+
+n_x        =       402 
+nbreal     =       400 
+nbpos      =         2 
+
+nx_obs      =       202 
+nbreal_obs =       200 
+nbpos_obs  =         2 
+
+
+
+ ------ Elapsed time for Task11_ScalingBack 
+
+ Elapsed Time   =        0.05
+
+
+
+ ----- Elapsed time for Task12_PlotXdXar 
+
+ Elapsed Time   =       17.45
+
+      
+  ============================ Step4 Conditional statistics processing ============================ 
+       
+ 
+ ------ Task13_ConditionalStatistics 
+
+
+n_x    =       402
+n_d    =       200
+nu     =        67
+n_ar   =     20000
+nx_obs =       202
+
+      
+       
+ n_x        =       402 
+ nbreal     =       400 
+ nbpos      =         2 
+       
+ nx_obs      =       202 
+ nbreal_obs =       200 
+ nbpos_obs  =         2 
+       
+ 
+ ind_mean      =         0 
+ ind_mean_som  =         0 
+ ind_pdf       =         1 
+ ind_confregion=         1 
+
+ n_q           =       400 
+ nbParam       =       100 
+ n_w           =         2 
+ n_x           =       402 
+ nbreal        =       400 
+ nbpos         =         2 
+
+ nq_obs        =       200 
+ nbParam       =       100 
+ nqobsPhys     =         2 
+ nw_obs        =         2 
+
+ ind_scaling   =         1 
+
+ n_d           =       200 
+ nbMC          =       100 
+ n_ar          =     20000 
+ nu            =        67 
+
+ nbw0_obs      =         2 
+
+ nbQcomp       =         5 
+ nbpoint_pdf   =       200 
+ pc_confregion =      0.95 
+
+ ind_display_screen = 1 
+ ind_print          = 1 
+
+
+
+
+ ----- Elapsed time for Task13_ConditionalStatistics 
+
+ Elapsed Time   =       79.30
+
+
